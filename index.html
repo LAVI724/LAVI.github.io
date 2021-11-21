@@ -4,14 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>LAVI WAS HERE.</title>
-    <script>
-    $(document).ready(function() {
-      $("button").addClass("animated bounce");
-      $(".well").addClass("animated shake");
-      $("#target3").addClass("fadeOut");
-    });
-  </script>
   </head>
+  
   <style>
   html {
     height: 100%;
@@ -66,7 +60,24 @@
         <p>歡迎追蹤莫眠ㄉIG貓貓帳</p>
     <img src="https://pbs.twimg.com/media/FCjpWjyUYAA0sDc?format=png&name=small" width="100" height="100" alt="一起吸貓貓 ! " style="display:block; margin:auto;"></a>
   
-    <div class="container-fluid">
+    <script>
+  $("body").addClass("animated hinge");
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+    $("body").addClass("animated hinge");
+  });
+</script>
+
+<div class="container-fluid">
   <h3 class="text-primary text-center">jQuery Playground</h3>
   <div class="row">
     <div class="col-xs-6">
@@ -87,6 +98,6 @@
     </div>
   </div>
 </div>
-
+  
   </body>
 </html>
