@@ -1,25 +1,11 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
 <!DOCTYPE html>
 <html>
 
   <head>
     <meta charset="utf-8">
     <title>LAVI WAS HERE.</title>
-    
-    <style type="text/css">
-			img{
-				position:absolute;
-				top:0px;
-				left:0px;
-			}
-		</style>
-		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(function(){
-				$("img").click(function(){
-        $(this).animate({left:"+=100px",top:"100px",opcity:0.5},1000);
-				});
-			});
-		</script>
     
   </head>
   
@@ -77,8 +63,36 @@
       <h2>貓貓的名字是莫眠 (◍•ᴗ•◍)</h2>
         <p>歡迎追蹤莫眠ㄉIG貓貓帳</p>
     <img src="https://pbs.twimg.com/media/FCjpWjyUYAA0sDc?format=png&name=small" width="100" height="100" alt="一起吸貓貓 ! " style="display:block; margin:auto;"></a>
-    <img src="https://img.heho.com.tw/wp-content/uploads/2019/08/0812-%e8%b2%93%e5%92%aa_02.png"/>
-    
+
+    <script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+    $("#target3").addClass("fadeOut");
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
   
   </body>
 </html>
